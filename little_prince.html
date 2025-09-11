@@ -5,75 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Little Prince</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: 'Times New Roman', serif;
-            background-color: #f9f9f9;
+            background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
-            margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 650px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
         }
         
-        h1 {
+        .header {
             text-align: center;
-            color: #444;
-            font-size: 24px;
-            margin-bottom: 5px;
-            font-weight: normal;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
         
         .author {
-            text-align: center;
-            font-style: italic;
-            margin-bottom: 30px;
-            color: #666;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
         }
         
         .content {
-            text-align: justify;
             font-size: 18px;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        
+        .content p {
+            margin-bottom: 20px;
+            text-indent: 20px;
         }
         
         .back-link {
-            display: block;
             text-align: center;
-            margin-top: 30px;
-            font-size: 16px;
+            margin-top: 20px;
         }
         
         .back-link a {
-            color: #0066cc;
+            color: #1a0dab;
             text-decoration: none;
+            font-size: 16px;
         }
         
         .back-link a:hover {
             text-decoration: underline;
         }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>The Little Prince</h1>
-        <p class="author">ANTOINE DE SAINT EXUPERY</p>
+        <div class="header">
+            <div class="author">ANTOINE DE SAINT-EXUPÉRY</div>
+            <div class="title">The Little Prince</div>
+        </div>
         
         <div class="content">
             <p>As the little prince dropped off to sleep, I took him in my arms and set out walking once more. I felt deeply moved, and stirred. It seemed to me that I was carrying a very fragile treasure. It seemed to me, even that there was nothing more fragile on all Earth. In the moonlight I looked at his pale forehead, his closed eyes, his locks of hair that trembled in the wind, and I said to myself: "What I see here is nothing but a shell. What is most important is invisible..."</p>
             
-            <p>As his lips opened slightly with the suspicion of a half-smile, I said to myself, again: "What moves me so deeply, about this little prince who is sleeping here, is his loyalty to a flower--the image of a rose that shines through his whole being like the flame of a lamp, even when he is asleep . . ." And I felt him to be more fragile still. I felt the need of protecting him, as if he himself were a flame that might be extinguished by a little puff of wind ...</p>
+            <p>As his lips opened slightly with the suspicion of a half-smile, I said to myself, again: "What moves me so deeply, about this little prince who is sleeping here, is his loyalty to a flower--the image of a rose that shines through his whole being like the flame of a lamp, even when he is asleep . . ." And I felt him to be more fragile still. I felt the need of protecting him, as if he himself were a flame that might be extinguished by a little puff of wind.</p>
         </div>
         
         <div class="back-link">
-            <a href="index.html">Return to Home Page</a>
+            <a href="index.html">Back to Home Page</a>
         </div>
     </div>
 </body>
